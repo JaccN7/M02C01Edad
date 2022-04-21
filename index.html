@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h4>JavaScript Básico - Ejercicio asincrónico 03</h4>
+    <h5>Calculadora de edad</h5>
+    <p>Solución 1: Calcular los días multiplicando la edad por los días de un año fijo de 365 días</p>
+    <label for="edad"></label>
+    <input type="number" id="edad" placeholder="Ingresa tu edad">
+    <button onclick="calcularDiasEdad()">Calcular días vividos</button>
+    <br />
+
+    <p>Solución 2: Calcular los días utlizando la fecha de nacimiento</p>
+    <label for="fechaNacimiento">Fecha Nacimiento</label>
+    <input type="date" id="fechaNacimiento" value="1990-01-01" min="1915-01-01">
+    <button onclick="calcularDiasVividos()">Calcular días vividos</button>
+    <br />
+
+    <h4>JavaScript Básico - Ejercicio asincrónico 04</h4>
+    <p>Calculadora de abastecimiento de por vida</p>
+    <p>El valor fijo para los snacks es de $900</p>
+    <label for="fechaMaxima">Fecha Máxima: </label>
+    <input type="date" id="fechaMaxima" value="2022-04-21" min="2022-04-21"><br/><br/>
+    <label for="snacks">Selecciona tu Snack favorito</label>
+    <select name="snacks" id="snacks">
+        <option value="Papas Fritas">Papas Fritas</option>
+        <option value="Cheetos">Cheetos</option>
+        <option value="Doritos">Doritos</option>
+        <option value="Chis Pop">Chis Pop</option>
+    </select><br/><br/>
+    <label for="cantSnacksAlDia">Cantidad de Snacks que consumes al día: </label>
+    <input type="number" id="cantSnacksAlDia" placeholder="Snacks que consumes por dia"><br /><br/>
+    <button onclick="calcularAbastecimiento()">Calcular snacks necesarios</button>
+    
+    <!-- Scripts JS -->
+    <script src="js/ejercicio.js"></script>
+</body>
+
+</html>
